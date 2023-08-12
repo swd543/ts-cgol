@@ -28,8 +28,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'pnpm'
     - run: npx pnpm i
-    - run: npx pnpm run build
     - run: npx pnpm test
+    - run: npx pnpm run build
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.0
       with:
