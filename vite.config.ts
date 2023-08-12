@@ -11,13 +11,12 @@ export default defineConfig({
     // devtools(),
     solidPlugin(),
   ],
+  base: "/ts-cgol/",
   server: {
     port: 3000,
   },
   build: {
     target: 'esnext',
   },
-  test: {
-    
-  }
+  test: {},
 });
