@@ -29,7 +29,7 @@ jobs:
         cache: 'pnpm'
     - run: npx pnpm i
     - run: npx pnpm run build
-    - run: npx pnpm
+    - run: npx pnpm test
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.0
       with:
