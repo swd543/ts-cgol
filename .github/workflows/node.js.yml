@@ -28,7 +28,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'pnpm'
     - run: npx pnpm i
-    - run: npx pnpm run build --if-present
+    - run: npx pnpm run build
     - run: npx pnpm
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.0
